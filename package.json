@@ -1,0 +1,14 @@
+{
+  "name": "helpers-scripts",
+  "version": "1.0.0",
+  "description": "This directory contains various utility scripts to help with file management tasks in a Node.js environment. Below is a description of each script and its functionality.",
+  "main": "dump-all.envs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^7.0.1"
+  }
+}

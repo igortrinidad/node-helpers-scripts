@@ -25,8 +25,10 @@ function findTargetFiles(dir, depth, fileList = []) {
   for (const entry of entries) {
     const fullPath = path.join(dir, entry)
 
+    console.log(entry)
+
     if (fs.statSync(fullPath).isDirectory()) {
-      if (!IGNORED_FOLDERS.includes(entry)) {
+      if (!IGNORED_FOLDERS.some((i) => entry.includes(i))) {
         findTargetFiles(fullPath, depth - 1, fileList)
       }
     } else if (FILES_TO_DUMP.includes(entry)) {
